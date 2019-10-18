@@ -1,0 +1,44 @@
+{
+  "name": "kelvinjs-bch",
+  "version": "1.0.0",
+  "description": "kelvinjs-bch",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "files": [
+    "lib"
+  ],
+  "engines": {
+    "node": "^10.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KelvinWallet/kelvinjs-bch.git"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "bitbox-sdk": "8.8.0",
+    "kelvinjs-protob": "git+https://github.com/KelvinWallet/kelvinjs-protob.git#v1.0.0"
+  },
+  "devDependencies": {
+    "@types/bigi": "1.4.2",
+    "@types/bip39": "2.4.2",
+    "@types/jest": "24.0.19",
+    "@types/node": "^10.0.0",
+    "@types/randombytes": "2.0.0",
+    "@types/wif": "2.0.1",
+    "gts": "1.1.0",
+    "jest": "24.9.0",
+    "kelvinjs-usbhid": "git+https://github.com/KelvinWallet/kelvinjs-usbhid.git#v1.0.0",
+    "ts-jest": "24.1.0",
+    "ts-node": "8.4.1",
+    "typescript": "3.6.4"
+  },
+  "scripts": {
+    "fix": "gts fix",
+    "lint": "gts check",
+    "build": "gts clean && tsc -p . && npm run-script lint",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:backend": "ts-node src/tests/index.ts"
+  }
+}
