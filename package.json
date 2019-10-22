@@ -1,6 +1,6 @@
 {
   "name": "kelvinjs-bch",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "kelvinjs-bch",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
@@ -8,7 +8,7 @@
     "lib"
   ],
   "engines": {
-    "node": ">=10.0.0"
+    "node": "^10"
   },
   "repository": {
     "type": "git",
@@ -17,7 +17,7 @@
   "license": "ISC",
   "dependencies": {
     "bitbox-sdk": "8.8.0",
-    "kelvinjs-protob": "git+https://github.com/KelvinWallet/kelvinjs-protob.git#v1.0.0"
+    "kelvinjs-protob": "git+https://github.com/KelvinWallet/kelvinjs-protob.git#v1.0.1"
   },
   "devDependencies": {
     "@types/bigi": "1.4.2",
@@ -28,7 +28,7 @@
     "@types/wif": "2.0.1",
     "gts": "1.1.0",
     "jest": "24.9.0",
-    "kelvinjs-usbhid": "git+https://github.com/KelvinWallet/kelvinjs-usbhid.git#v1.0.0",
+    "kelvinjs-usbhid": "git+https://github.com/KelvinWallet/kelvinjs-usbhid.git#v1.0.1",
     "ts-jest": "24.1.0",
     "ts-node": "8.4.1",
     "typescript": "3.6.4"

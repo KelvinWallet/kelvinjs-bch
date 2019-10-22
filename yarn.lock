@@ -3545,16 +3545,16 @@ keccak@^1.3.0:
     nan "^2.2.1"
     safe-buffer "^5.1.0"
 
-"kelvinjs-protob@git+https://github.com/KelvinWallet/kelvinjs-protob.git#v1.0.0":
-  version "1.0.0"
-  resolved "git+https://github.com/KelvinWallet/kelvinjs-protob.git#fd8e204bcfcf9b2b0302caa1b1fa864a7ddad656"
+"kelvinjs-protob@git+https://github.com/KelvinWallet/kelvinjs-protob.git#v1.0.1":
+  version "1.0.1"
+  resolved "git+https://github.com/KelvinWallet/kelvinjs-protob.git#947b6d94917d29c1ec96988bdf0e6e474c005aea"
   dependencies:
     "@types/google-protobuf" "3.7.2"
     google-protobuf "3.10.0"
 
-"kelvinjs-usbhid@git+https://github.com/KelvinWallet/kelvinjs-usbhid.git#v1.0.0":
-  version "1.0.0"
-  resolved "git+https://github.com/KelvinWallet/kelvinjs-usbhid.git#9d24e09d6888ed72004f01c2ad1d8e6444118496"
+"kelvinjs-usbhid@git+https://github.com/KelvinWallet/kelvinjs-usbhid.git#v1.0.1":
+  version "1.0.1"
+  resolved "git+https://github.com/KelvinWallet/kelvinjs-usbhid.git#9de4bd8df8bf4a803b9d884f1dbd1898221750bf"
   dependencies:
     "@types/node-hid" "0.7.3"
     node-hid "0.7.9"
