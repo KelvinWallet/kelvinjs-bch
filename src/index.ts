@@ -521,11 +521,19 @@ async function getRecentHistory(
       .map(x => +x)
       .reduce((a, b) => a + b, 0);
 
+    // Convert a value representing account balance change from an integer in
+    // the base unit (may be negative) to a string in the normal unit
+    const conv = (x: number): string => {
+      if (x >= 0) {
+        return convertBaseAmountToNormAmount('' + x);
+      } else {
+        return '-' + convertBaseAmountToNormAmount('' + -x);
+      }
+    };
+
     return {
       txid: { value: tx.txid, link: getUrlForTx(network, tx.txid) },
-      amount: {
-        value: convertBaseAmountToNormAmount('' + (incomeSum - expenseSum)),
-      },
+      amount: { value: conv(incomeSum - expenseSum) },
       date: { value: new Date(tx.time * 1000).toISOString() },
       isConfirmed: { value: '' + (tx.confirmations > 0) },
     };

@@ -1,6 +1,6 @@
 {
   "name": "kelvinjs-bch",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "kelvinjs-bch",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
