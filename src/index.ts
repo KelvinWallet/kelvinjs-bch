@@ -523,7 +523,9 @@ async function getRecentHistory(
 
     return {
       txid: { value: tx.txid, link: getUrlForTx(network, tx.txid) },
-      amount: { value: '' + (incomeSum - expenseSum) },
+      amount: {
+        value: convertBaseAmountToNormAmount('' + (incomeSum - expenseSum)),
+      },
       date: { value: new Date(tx.time * 1000).toISOString() },
       isConfirmed: { value: '' + (tx.confirmations > 0) },
     };
