@@ -1,6 +1,6 @@
 {
   "name": "kelvinjs-bch",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "kelvinjs-bch",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
@@ -28,7 +28,7 @@
     "@types/wif": "2.0.1",
     "gts": "1.1.0",
     "jest": "24.9.0",
-    "kelvinjs-usbhid": "git+https://github.com/KelvinWallet/kelvinjs-usbhid.git#v1.0.1",
+    "kelvinjs-usbhid": "git+https://github.com/KelvinWallet/kelvinjs-usbhid.git#v1.0.3",
     "ts-jest": "24.1.0",
     "ts-node": "8.4.1",
     "typescript": "3.6.4"
